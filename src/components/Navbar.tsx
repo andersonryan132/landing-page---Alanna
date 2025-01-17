@@ -31,7 +31,7 @@ const scrollToSection = (sectionId: string) => {
             <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-teal-600">Sobre</button>
             <button onClick={() => scrollToSection('services')} className="text-gray-600 hover:text-teal-600">Serviços</button>
             <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-teal-600">Contato</button>
-            <button className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">
+            <button onClick={url} className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">
               Agendar Consulta
             </button>
           </div>
