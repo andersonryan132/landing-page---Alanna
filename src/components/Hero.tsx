@@ -6,6 +6,14 @@ const url = () => {
 }
 
 const Hero = () => {
+
+  //Função para fazer a rolagem para section
+  const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }};
+
   return (
     <div className="relative bg-gradient-to-r from-teal-50 to-white pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -23,7 +31,7 @@ const Hero = () => {
                 Agendar Consulta
                 <ChevronRight className="ml-2 h-5 w-5" />
               </button>
-              <button className="ml-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-gray-50">
+              <button onClick={() => scrollToSection('about')} className="ml-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-gray-50">
                 Saiba Mais
               </button>
             </div>

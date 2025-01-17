@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Instagram, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
 //Função para fazer a rolagem para section
 const scrollToSection = (sectionId: string) => {
