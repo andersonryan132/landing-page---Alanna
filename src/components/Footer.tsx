@@ -40,8 +40,8 @@ const Footer = () => {
             <div className="mt-8">
               <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contato</h3>
               <p className="mt-4 text-base text-gray-300">
-                contato@psicovida.com.br<br />
-                +55 (11) 99999-9999
+              alannadomingospsi@gmail.com<br />
+                +55 (84) 98805-0237
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Footer = () => {
         
         <div className="mt-8 border-t border-gray-700 pt-8">
           <p className="text-base text-gray-400 text-center">
-            © 2024 PsicoVida. Todos os direitos reservados.
+            © 2025 Ryan-Dev. Todos os direitos reservados.
           </p>
         </div>
       </div>

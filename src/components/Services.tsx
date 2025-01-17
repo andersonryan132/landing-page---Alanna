@@ -1,25 +1,25 @@
 import React from 'react';
-import { User, Heart, Video, Brain } from 'lucide-react';
+import { User, Video, Brain, BookA } from 'lucide-react';
 
 const services = [
   {
-    title: 'Terapia Individual',
-    description: 'Atendimento personalizado para auxiliar no seu desenvolvimento pessoal.',
-    icon: Heart,
+    title: 'Psicologia Escolar',
+    description: 'orientação de alunos, professores e pais em questões relacionadas ao desenvolvimento infantil, aprendizado, comportamento e relacionamento interpessoal.',
+    icon: BookA,
   },
   {
-    title: 'Terapia Humanista:',
-    description: 'Capacidade do indivíduo de crescer e se auto-realizar, promovendo um ambiente de aceitação incondicional e empatia.',
+    title: 'Acompanhamento personalizado:',
+    description: 'Planejamento terapêutico adaptado às suas necessidades específicas, visando o autoconhecimento e a melhoria da qualidade de vida.',
     icon: User,
   },
   {
-    title: 'Terapia Online',
-    description: 'Sessões remotas com a mesma qualidade do atendimento presencial.',
+    title: 'Psicoterapia presencial e online:',
+    description: 'Atendimento individual para adolescentes, adultos e idosos, com enfoque na Terapia Cognitivo-Comportamental.',
     icon: Video,
   },
   {
-    title: 'Acompanhamento Especializado',
-    description: 'Suporte para ansiedade, depressão e outros desafios emocionais.',
+    title: 'Tratamento de demandas emocionais',
+    description: 'Ansiedade, depressão, conflitos familiares, conjugais e outros desafios do dia a dia.',
     icon: Brain,
   },
 ];
