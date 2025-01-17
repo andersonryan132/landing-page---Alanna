@@ -1,6 +1,10 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
+const url = () => {
+  window.open("https://wa.me/5584988050237?text=Estou%20interessado%20em%20seus%20servi%C3%A7os%20de%20psicologia%20e%20gostaria%20de%20marcar%20uma%20consulta.%20Poderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20de%20hor%C3%A1rios%20e%20os%20procedimentos%20para%20agendamento%3F", "_blank");
+}
+
 const Hero = () => {
   return (
     <div className="relative bg-gradient-to-r from-teal-50 to-white pt-20">
@@ -12,10 +16,10 @@ const Hero = () => {
               <span className="block text-teal-600">saúde mental</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Oferecemos terapia individual, de casal e online para ajudar você a superar desafios e encontrar equilíbrio.
+            Realizo Plantão Psicológico Online, conheça um ambiente com acolhimento, escuta ativa, empatia e orientação de forma acessível e prática.
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left">
-              <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
+              <button onClick={url} className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
                 Agendar Consulta
                 <ChevronRight className="ml-2 h-5 w-5" />
               </button>
