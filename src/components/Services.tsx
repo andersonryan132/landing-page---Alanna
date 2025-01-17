@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Heart, Video, Brain } from 'lucide-react';
+import { User, Heart, Video, Brain } from 'lucide-react';
 
 const services = [
   {
@@ -8,9 +8,9 @@ const services = [
     icon: Heart,
   },
   {
-    title: 'Terapia de Casal',
-    description: 'Fortalecendo relacionamentos e melhorando a comunicação.',
-    icon: Users,
+    title: 'Terapia Humanista:',
+    description: 'Capacidade do indivíduo de crescer e se auto-realizar, promovendo um ambiente de aceitação incondicional e empatia.',
+    icon: User,
   },
   {
     title: 'Terapia Online',

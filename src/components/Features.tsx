@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Brain, Users, Video } from 'lucide-react';
+import { Heart, Users, Video, CalendarClock } from 'lucide-react';
 
 const features = [
   {
@@ -8,18 +8,18 @@ const features = [
     icon: Heart,
   },
   {
-    name: 'Profissionais Qualificados',
-    description: 'Equipe com vasta experiência e formação especializada.',
-    icon: Brain,
+    name: 'Agendamento Fácil',
+    description: 'Marque sua consulta por Whatsapp ou por telefone.',
+    icon: CalendarClock,
   },
   {
-    name: 'Sessões Online ou Presenciais',
+    name: 'Sessões Online',
     description: 'Flexibilidade para atender você onde estiver.',
     icon: Video,
   },
   {
     name: 'Confidencialidade Garantida',
-    description: 'Seu bem-estar e privacidade são nossas prioridades.',
+    description: 'Seu bem-estar e privacidade são minha prioridade.',
     icon: Users,
   },
 ];
