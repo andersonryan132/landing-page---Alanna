@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Instagram, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+//Função para fazer a rolagem para section
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
   return (
     <footer className="bg-gray-900">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -16,10 +26,38 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Links Rápidos</h3>
             <ul className="mt-4 space-y-4">
-              <li><a href="#" className="text-base text-gray-300 hover:text-white">Home</a></li>
-              <li><a href="#" className="text-base text-gray-300 hover:text-white">Sobre</a></li>
-              <li><a href="#" className="text-base text-gray-300 hover:text-white">Serviços</a></li>
-              <li><a href="#" className="text-base text-gray-300 hover:text-white">Contato</a></li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('home')}
+                  className="text-base text-gray-300 hover:text-white"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="text-base text-gray-300 hover:text-white"
+                >
+                  Sobre
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('services')}
+                  className="text-base text-gray-300 hover:text-white"
+                >
+                  Serviços
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="text-base text-gray-300 hover:text-white"
+                >
+                  Contato
+                </button>
+              </li>
             </ul>
           </div>
           

@@ -11,16 +11,24 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
-      <main>
+    <Navbar />
+    <main>
+      <section id="home">
         <Hero />
-        <Features />
+      </section>
+      <section id="about">
         <About />
+      </section>
+      <Features />
+      <section id="services">
         <Services />
+      </section>
+      <section id="contact">
         <CTA />
-      </main>
-      <Footer />
-    </div>
+      </section>
+    </main>
+    <Footer />
+  </div>
   );
 }
 

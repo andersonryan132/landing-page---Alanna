@@ -4,9 +4,19 @@ import { Menu, X } from 'lucide-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+//Link pessoanlizado do WPP
 const url = () => {
   window.open("https://wa.me/5584988050237?text=Estou%20interessado%20em%20seus%20servi%C3%A7os%20de%20psicologia%20e%20gostaria%20de%20marcar%20uma%20consulta.%20Poderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20de%20hor%C3%A1rios%20e%20os%20procedimentos%20para%20agendamento%3F", "_blank");
 }
+
+//Função para fazer a rolagem para section
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    setIsOpen(false);
+  }
+};
 
   return (
     <nav className="bg-white shadow-sm fixed w-full z-50">
@@ -17,11 +27,11 @@ const url = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-600 hover:text-teal-600">Home</a>
-            <a href="#" className="text-gray-600 hover:text-teal-600">Sobre</a>
-            <a href="#" className="text-gray-600 hover:text-teal-600">Serviços</a>
-            <a href="#" className="text-gray-600 hover:text-teal-600">Contato</a>
-            <button onClick={url} className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">
+            <button onClick={() => scrollToSection('home')} className="text-gray-600 hover:text-teal-600">Home</button>
+            <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-teal-600">Sobre</button>
+            <button onClick={() => scrollToSection('services')} className="text-gray-600 hover:text-teal-600">Serviços</button>
+            <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-teal-600">Contato</button>
+            <button className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">
               Agendar Consulta
             </button>
           </div>
